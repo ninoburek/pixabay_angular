@@ -9,30 +9,48 @@
     <title>Title!</title>
 		
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
-
+	
+	<link rel="stylesheet" href="css/custom.css">
+	
+	
 </head>
 
 <body>
 
-<div class="container">
-	<div class="row">
-		<div class="col">
-			
-			<div ng-app="myGreatApp" ng-controller="myController">
-
-				<div ng-repeat="x in myData">
-					{{ x.previewURL }}
-				 </div>
-			
+	<div class="container">
+		<div class="row">
+			 <div class="col-12">
+			 	<h1>Beautiful yellow flowers from Pixabay :)</h1>
+				 <hr>
+			 </div>
 		</div>
+	</div>
+	
+	
+	
+<div ng-app="myGreatApp" ng-controller="myController">
+	<div class="container">
+		
+		<div class="row margin1rem">
+		
+			 <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2" ng-repeat="x in myData">
+			 	
+				 <img src="{{ x.webformatURL }}" class="mymargin img-fluid">
+					 
+			</div>	
+			
 	</div>	
-</div>	
+ </div>		
+</div>		
 	
 <script>
 	
 	//change this to your Pixabay key:
 	var KEY = "6473511-0417f2cad683f1bee54cafe15";
 	//---------------------------------------------
+	
+	
+	
 	
 	
 var app = angular.module('myGreatApp', []);
