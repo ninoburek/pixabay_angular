@@ -20,23 +20,33 @@
 			
 			<div ng-app="myGreatApp" ng-controller="myController">
 
-				<p>Reponse from pixaby for testing only :)</p>
-				<p>{{response}}<p>
-
-				</div>
+				<div ng-repeat="x in myData">
+					{{ x.previewURL }}
+				 </div>
 			
 		</div>
 	</div>	
 </div>	
 	
 <script>
+	
+	//change this to your Pixabay key:
+	var KEY = "6473511-0417f2cad683f1bee54cafe15";
+	//---------------------------------------------
+	
+	
 var app = angular.module('myGreatApp', []);
 app.controller('myController', function($scope, $http) {
-  $http.get("https://pixabay.com/api/?key=6473511-0417f2cad683f1bee54cafe15&q=yellow+flowers&image_type=photo")
+  $http.get("https://pixabay.com/api/?key="+KEY+"&q=yellow+flowers&image_type=photo")
   .then(function(response) {
     $scope.response = response.data;
+	$scope.myData = response.data.hits;
+	  
+	  
   });
 });
+	
+	
 </script> 
 
 	
