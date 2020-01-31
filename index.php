@@ -9,7 +9,7 @@
     <title>Beautiful yellow flowers from Pixabay :)</title>
 		
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
-	
+	<script src="js/myscript.js"></script>
 	<link rel="stylesheet" href="css/custom.css">
 	
 	
@@ -67,11 +67,6 @@
 		 </div>		
 		</div>
 
-	
-	
-	
-<script src="js/myscript.js"></script>
-	
 	
 	
 </body>

@@ -8,4 +8,4 @@ Yellow flowers are nice but I'am sure you want more :)
 Paging is simplified to next/previous page only.. next version with page numbers.
 
 Don't forget to change Pixabay api key in
-js\myscript.js
+js/myscript.js
