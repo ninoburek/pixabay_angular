@@ -27,7 +27,7 @@
 	</div>
 	
 	
-<? // main container for images  ?>
+
 		<div ng-controller="myController">
 			<div class="container">
 
@@ -35,9 +35,9 @@
 
 					 <div class="col-12 col-sm-6 col-md-4 col-lg-3" ng-repeat="x in myData">
 
-						 <? //forcing images to all be equal size; 16/9 ?>
+						 
 						 <div class="imageContainer img-responsive-16by9">
-							 <a href="image.php?id={{ x.id }}"><img src="{{ x.webformatURL }}" class="img-fluid"></a>
+							 <a href="image.html?id={{ x.id }}"><img src="{{ x.webformatURL }}" class="img-fluid"></a>
 							 <div class="overimage">{{ x.tags }}</div>
 						 </div>
 
