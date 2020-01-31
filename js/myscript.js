@@ -58,7 +58,7 @@
 	  $scope.myFunction = function() {
 		$scope.page++;
 		
-		  document.location = "index.php?page="+$scope.page+"";
+		  document.location = "index.html?page="+$scope.page+"";
 	  }
 	});
 	//--------------------------------
@@ -74,7 +74,7 @@
 	  $scope.myFunction = function() {
 		$scope.page--;
 		
-		  document.location = "index.php?page="+$scope.page+"";
+		  document.location = "index.html?page="+$scope.page+"";
 	  }
 	});
 	//----------------------------------
