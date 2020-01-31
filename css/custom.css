@@ -1,1 +1,31 @@
-.mymargin {margin-bottom:1rem} 
+
+.imageContainer{
+	position:relative;
+	margin-bottom:1rem
+}
+
+.overimage{
+	position:absolute;
+	bottom:0;
+	background:black;
+	width:100%;
+	padding:3px;
+	opacity: 0;
+    transition: .2s ease;
+    background-color: #008CBA;
+}
+
+.imageContainer:hover .overimage {
+  opacity: 0.8; 
+  color:white;
+	font-size:0.9rem;
+}
+
+.hidden {display:none}
+
+.img-responsive-16by9 {
+	display: block;
+	height: 0;
+	padding-bottom: 56.25%;
+	overflow: hidden;
+}
